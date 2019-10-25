@@ -13,6 +13,7 @@ h1 {
     text-align: center;
     color: #009688;
     font-size: 40px;
+    margin-bottom: 11px;
 }
 p{
     margin-bottom: 0;
@@ -21,13 +22,16 @@ p{
     position: relative;
     z-index: 1;
 }
+.slider {
+    padding-bottom: 23px;
+    margin-bottom: 80px;
+}
 #slider .slide {
     border-radius: 8px;
-    box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.23);
     padding: 32px;
     height: 332px;
-    width: 79%!important;
-    margin: 20px 9px;
+    width: 77%!important;
+    margin: 26px 9px;
     align-items: flex-end;
     position: relative;
     cursor: pointer;
@@ -63,20 +67,113 @@ p{
     -webkit-background-size: 14px 14px;
     -moz-background-size: 14px 14px;
     background-size: 14px 14px;
+    box-shadow: 0px 13px 11px 0px rgba(93, 169, 162, 0.29)
 }
 .strike{
     background: linear-gradient(#92d5ce 84%, #c0ede9);
     background-size: 100% 12px;
+    box-shadow: 0px 13px 11px 0px rgba(93, 169, 162, 0.29)
 }
 .strike-vertical {
     background: linear-gradient(to right, /* или 90deg */ #009688cc 88%, #94bebafc 0);
     background-size: 13px 100%;
+    box-shadow: 0px 13px 11px 0px rgba(93, 169, 162, 0.29)
 }
 .strike-vertical-orange {
     background: linear-gradient(to right, /* или 90deg */#EE7E4A 88%, #ffbb9c 0);
     background-size: 13px 100%;
+    box-shadow: 0px 13px 11px 0px rgba(172, 108, 80, 0.29);
 }
 .strike-orange {
     background: linear-gradient(#EE7E4A 81%, #ffbb9c);
     background-size: 100% 12px;
+    box-shadow: 0px 13px 11px 0px rgba(172, 108, 80, 0.29);
+}
+@media screen and (max-width: 1280px) {
+    .container {
+     max-width: 1270px;
+     width: 100%;
+    }
+@media screen and (max-width: 1024px) {
+    .container {
+     max-width: 1020px;
+     width: 100%;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .container {
+     max-width: 920px;
+     width: 100%;
+    }
+}
+@media screen and (max-width: 810px) {
+    .container {
+     max-width: 800px;
+     width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container {
+     max-width: 760px;
+     width: 100%;
+    }
+    #slider .slick-prev,
+    #slider .slick-next {
+        display: none!important;
+    }
+    #slider .slide {
+        width: 88%!important;
+        height: 450px;
+    }
+    .back {
+        opacity: 1;
+    }
+    h1 {
+        font-size: 28px;
+        padding-top: 60px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .container {
+     max-width: 640px;
+     width: 100%;
+    }
+    #slider .slide {
+        margin: 0;
+    }
+    #slider .slide {
+        width: 87%!important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+     max-width: 470px;
+     width: 100%;
+    }
+    #slider .slide {
+        width: 80%!important;
+        margin: 26px 8px;
+        height: 330px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container {
+     max-width: 320px;
+     width: 100%;
+    }
+    #slider .slide {
+        width: 74%!important;
+        margin: 26px 8px;
+        height: 210px;
+    }
+    .slider {
+        padding-bottom: 0px;
+    }
 }
