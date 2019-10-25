@@ -76,13 +76,13 @@
 
 .slick-prev
 {
-    left: 40%;
+    left: 36%;
     background: url(../img/left.png) 48% 50% no-repeat;
     background-size: 18%;
 }
 [dir='rtl'] .slick-prev
 {
-    right: 40%;
+    right: 36%;
     left: auto;
 }
 .slick-prev:before
@@ -96,7 +96,7 @@
 
 .slick-next
 {
-    right: 40%;
+    right: 36%;
     background: url(../img/rigth.png) 52% 50% no-repeat;
     background-size: 18%;
 }
